@@ -1,0 +1,188 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Studio | Digital Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">NOVA STUDIO</a>
+
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">DIGITAL CREATIVE STUDIO</p>
+
+          <h1 id="hero-title">
+            Designing digital experiences that feel simple and meaningful.
+          </h1>
+
+          <p class="hero-text">
+            Nova Studio creates thoughtful websites and digital interfaces for
+            modern brands and growing businesses.
+          </p>
+
+          <a class="button" href="#work">Explore Our Work</a>
+        </div>
+      </section>
+      <section id="services" class="section" aria-labelledby="services-title">
+        <header class="section-header">
+          <p class="eyebrow">WHAT WE DO</p>
+          <h2 id="services-title">Our Services</h2>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>Web Design</h3>
+            <p>
+              Clean and responsive websites designed around clear communication
+              and usability.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>UI/UX Design</h3>
+            <p>
+              Intuitive interfaces that make digital products easier and more
+              enjoyable to use.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Brand Identity</h3>
+            <p>
+              Visual systems that help brands communicate consistently across
+              digital experiences.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section" aria-labelledby="work-title">
+        <header class="section-header">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2 id="work-title">Featured Projects</h2>
+        </header>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-image project-one" aria-hidden="true"></div>
+            <div class="project-content">
+              <p class="project-type">WEB DESIGN</p>
+              <h3>Aurora Dashboard</h3>
+              <p>
+                A focused analytics dashboard built around clarity and efficient
+                information discovery.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-image project-two" aria-hidden="true"></div>
+            <div class="project-content">
+              <p class="project-type">E-COMMERCE</p>
+              <h3>Minimal Commerce</h3>
+              <p>
+                A streamlined shopping experience with a strong focus on product
+                presentation.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-image project-three" aria-hidden="true"></div>
+            <div class="project-content">
+              <p class="project-type">MOBILE APP</p>
+              <h3>City Guide</h3>
+              <p>
+                A mobile-first guide that helps people discover places and plan
+                their next visit.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">ABOUT THE STUDIO</p>
+          <h2 id="about-title">Good design starts with understanding.</h2>
+        </div>
+
+        <p>
+          We combine thoughtful design, accessible interfaces, and practical
+          development to create digital experiences that are useful, clear, and
+          built to last.
+        </p>
+      </section>
+
+      <section
+        id="contact"
+        class="section contact"
+        aria-labelledby="contact-title"
+      >
+        <header class="section-header">
+          <p class="eyebrow">LET'S TALK</p>
+          <h2 id="contact-title">Have a project in mind?</h2>
+          <p>Send us a message and tell us what you are working on.</p>
+        </header>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Nova Studio</p>
+      <p>Digital design for meaningful experiences.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```
