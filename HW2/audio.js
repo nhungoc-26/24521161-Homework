@@ -16,6 +16,10 @@ function playSound(soundName) {
     return;
   }
 
+  if (audioContext.state === "suspended") {
+    audioContext.resume();
+  }
+
   const oscillator = audioContext.createOscillator();
   const gainNode = audioContext.createGain();
 
