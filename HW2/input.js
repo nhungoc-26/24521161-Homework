@@ -20,4 +20,5 @@ document.addEventListener("keydown", (event) => {
   }
 
   playSound(soundName);
+  recordBeat(soundName);
 });
