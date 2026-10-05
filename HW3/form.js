@@ -8,6 +8,7 @@ const formStates = {
 let currentState = formStates.IDLE;
 
 const form = document.getElementById("signup-form");
+const emailInput = document.getElementById("email");
 const submitButton = document.getElementById("submit-button");
 const formMessage = document.getElementById("form-message");
 
@@ -35,6 +36,10 @@ function setFormState(state, message = "") {
   }
 }
 
+function sanitizeInput(value) {
+  return value.trim();
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -42,10 +47,18 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+  const email = sanitizeInput(emailInput.value);
+
+  if (!email) {
+    setFormState(formStates.ERROR, "Please enter your email.");
+    return;
+  }
+
   setFormState(formStates.SUBMITTING);
 
   setTimeout(() => {
-    setFormState(formStates.SUCCESS, "Thanks! You have joined the waitlist.");
+    formMessage.textContent = `Thanks! ${email} has joined the waitlist.`;
+    setFormState(formStates.SUCCESS, formMessage.textContent);
   }, 1000);
 });
 
